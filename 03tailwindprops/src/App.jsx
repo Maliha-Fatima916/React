@@ -27,6 +27,7 @@ function App() {
     <>
      <h1 className="text-3xl font-bold underline text-blue-500"> Tailwind Practice </h1>
      <Child hellotext = 'Hello World'/> ;
+     <h1 className = "shadow-lg rounded-xl text-black p-10 " > It is just a container  </h1>
     </>
   )
 }
