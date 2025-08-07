@@ -1,8 +1,20 @@
 # React
-1. what is JSX ?
+## 1. what is JSX ?
 JSX stands for JavaScript XML.
 It’s a syntax extension for JavaScript that lets you write HTML-like code inside JavaScript.
 const element = "<h1> Hello World! </h1> => JSX "
+In simple words : JSX is about 90% HTML (with few rules (will discuss later)) in which to inject JS variables / expressions use {}
+
+### Rules of JSX
+1. Names of React function components must start with capital letter e.g. App()
+2. JSX elements must be wrapped inside a single element that can either be a <div> or React Fragment (<> </>)
+3. Use {} (curly braces) to insert JavaScript variables or expressions 
+4. Attributes of JSX tags are in Camel Case -> newVariable
+5. In JSX' tags attribute class => className , for -> htmlFor
+6. Single Tags like <img> , <br> should be self-closing e.g. <img /> , <br />
+7. To use a React component inside another component use it as a self-closing containing component's name e.g. App(){ 
+    return <Method2 /> }
+
 
 2. Browsers don’t understand JSX.
 React uses a compiler (Babel) to convert JSX into normal JavaScript: 
