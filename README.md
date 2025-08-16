@@ -1,7 +1,3 @@
-Perfect 🚀 You want a **well-structured README with clean Markdown**.
-Here’s the properly formatted version of your notes:
-
-````markdown
 # React Notes
 
 ## 1. What is JSX?
