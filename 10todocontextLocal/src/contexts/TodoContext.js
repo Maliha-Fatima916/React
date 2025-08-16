@@ -9,11 +9,11 @@ import {createContext,useContext} from 'react'
 // 1. Write name of to-do    2. change/Update this name   3. Delete this To-Do     4.Add a new to-do
 // we will put these functionalities in Context so that different UI components having one of these functionalities can communicate with each other and work in coordination
 
-const ToDoContext = createContext({
+const TodoContext = createContext({
     todos:[ // each To-Do patti is an object
         {
             id: 1, // each to-do patti will have an id , name and checkbox
-            todoTitle: "to-do msg",
+            todo: "to-do msg",
             complete: false
         }
     ],
@@ -25,9 +25,9 @@ const ToDoContext = createContext({
 
 //Step2: export this context as hook (our own created)
 export const useTodo = () => {
-    return useContext(ToDoContext)
+    return useContext(TodoContext)
 }
 
 //Step3: store Provider in a variable to create less chaos in App.jsx
 
-export const ToDoProvider = ToDoContext.Provider
+export const TodoProvider = TodoContext.Provider
